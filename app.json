@@ -1,37 +1,26 @@
 {
-  "name": "Inline Games",
-  "description": "A Telegram bot providing games that can be played in any chat.",
-  "repository": "https://github.com/jacklul/inlinegamesbot",
-  "logo": "https://raw.githubusercontent.com/jacklul/inlinegamesbot/master/logo.png",
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-php"
-    }
-  ],
-  "addons": [
-    "heroku-postgresql"
-  ],
+  "name": "𝑨𝒁𝑬𝑶𝑵 𝑿 𝑺𝑪𝑨𝑵𝑵𝑬𝑹",
+  "description": "Source Code Of Scanner Made By Nobita",
+  "keywords": ["GBANS", "SCANNER", "telegram"],
+  "repository": "www.adminlinkde.com",
+  "stack": "container",
   "env": {
-    "BOT_TOKEN": {
-      "description": "Bot API token obtained from @BotFather",
-      "value": ""
-    },
     "BOT_USERNAME": {
-      "description": "Bot username (without '@' symbol)",
-      "value": ""
+      "description": "Api Id Dal Bsdk",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Api Hash Tera Baap Yaniki Mai Dalunga?r",
+      "required": true
     },
     "BOT_WEBHOOK": {
-      "description": "Webhook URL (YOURAPPNAME must match app name entered earlier)",
-      "value": "https://YOURAPPNAME.herokuapp.com"
+      "description": "Telethon String Dalna Ok Lawde.",
+      "required": false,
+      "value": ""
     },
     "BOT_SECRET": {
-      "description": "Secret variable used to secure the web hook",
-      "generator": "secret"
-    },
-    "BOT_ADMIN": {
-      "description": "Admin's Telegram ID",
-      "value": "",
-      "required": false
+      "description": "TERE BABA LOG KA ID",
+      "required": true
     }
   }
 }
